@@ -1,0 +1,8 @@
+    for i in range(1,n):
+        track = i-1
+        count = arr[i]
+        while(track >= 0 and arr[track] > count):
+            arr[track + 1] = arr[track]
+            track = track - 1 
+            arr[track + 1] = count
+        print(*arr)
