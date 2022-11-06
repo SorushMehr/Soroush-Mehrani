@@ -1,0 +1,6 @@
+    output = [0] * (max(arr) + 1)
+    
+    for i in arr:
+        output[i] += 1
+        
+    return output
