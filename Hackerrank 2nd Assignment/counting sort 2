@@ -1,0 +1,17 @@
+    ct = [0] * (max(arr) + 1)
+    output = [0] * (len(arr))
+    
+    for el in arr:
+        ct[el] += 1
+        
+    total = 0
+    for ind in range(len(ct)):
+        old = ct[ind]
+        ct[ind] = total
+        total += old
+        
+    for el in arr:
+        output[ct[el]] = el
+        ct[el] += 1
+        
+    return output
