@@ -1,0 +1,14 @@
+    left = []
+    equal = []
+    right = []
+    pivot = arr[0]
+    
+    for el in arr:
+        if el < pivot:
+            left.append(el)
+        elif el == pivot:
+            equal.append(el)
+        elif el > pivot:
+            right.append(el)
+            
+    return left + equal + right
