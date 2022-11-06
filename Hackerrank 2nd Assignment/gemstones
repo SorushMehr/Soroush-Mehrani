@@ -1,0 +1,2 @@
+    gem = [set(i) for i in arr]
+    return len(set.intersection(*gem))
